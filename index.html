@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirius Tech Labs | Certified Laptops</title>
+    <meta name="description" content="Buy certified refurbished HP laptops with 20-point inspection, 7-day warranty, and pay on delivery nationwide. Best prices in Nigeria.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'space-blue': '#003d7a',
+                        'space-blue-light': '#112240',
+                        'accent-blue': '#64ffda'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        
+        }
+        .trust-badge {
+            animation: pulse 2s infinite;
+        }
+        .youtubeVideo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        .floating-button {
+            box-shadow: 0 4px 20px rgba(10, 25, 47, 0.3);
+            border-radius: 10px;            
+        }
+        .whatsapp-chat {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .my-button {
+    background-color: #00ad48; /* Blue background */
+    color: white;              /* White text */
+    padding: 15px 32px;        /* Padding inside the button */
+    text-align: center;
+    text-decoration: none;     /* Removes the underline */
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;        /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+
+  /* This changes the color when you hover over it */
+  .my-button:hover {
+    background-color: #40ff00;
+  }
+    .form{
+        background-color: #003d7a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .cac{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        width: 50%;
+    }
+    </style>
+</head>
+<body class="min-h-screen bg-white font-inter text-gray-800">
+    <!-- Fixed Top Navbar -->
+    <header class="fixed top-0 left-0 right-0 bg-space-blue text-white z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <!-- Company Name -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold">Sirius Tech Labs</h1>
+                </div>
+                
+                <!-- Trust Badge - Visible on mobile -->
+                <div class="trust-badge bg-green-600 px-3 py-1 rounded-full text-sm font-medium hidden md:block">
+                    <i class="fas fa-shipping-fast mr-1"></i> PAY ON DELIVERY NATIONWIDE
+                </div>
+                
+                <!-- Mobile Hamburger Menu -->
+                <button id="menuToggle" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#cac" class="hover:text-accent-blue transition">Registration</a>
+                    <a href="#video" class="hover:text-accent-blue transition">Video</a>
+                    <a href="#specs" class="hover:text-accent-blue transition">Specs</a>
+                    <a href="#warranty" class="hover:text-accent-blue transition">Warranty</a>
+                    <a href="#faq" class="hover:text-accent-blue transition">FAQ</a>
+                    <a href="#contact" class="hover:text-accent-blue transition">Contact</a>
+                </nav>
+            </div>
+            
+            <!-- Trust Badge for Mobile -->
+            <div class="trust-badge bg-green-600 px-3 py-2 rounded-lg text-center font-medium mb-2 md:hidden">
+                <i class="fas fa-shipping-fast mr-2"></i>🚚 FREE PAY ON DELIVERY NATIONWIDE
+            </div>
+            
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobileMenu" class="hidden md:hidden bg-space-blue-light rounded-lg mt-2 mb-3">
+                <div class="py-3">
+                    <a href="#cac" class="block py-2 px-4 hover:bg-space-blue hover:text-accent-blue">
+                        <i class="fa-solid fa-registered mr-3"></i>Registration
+                    </a>
+                    <a href="#video" class="block py-2 px-4 hover:bg-space-blue hover:text-accent-blue">
+                        <i class="fas fa-play-circle mr-3"></i>Video Walkthrough
+                    </a>
+                    <a href="#specs" class="block py-2 px-4 hover:bg-space-blue hover:text-accent-blue">
+                        <i class="fas fa-list-alt mr-3"></i>Specifications
+                    </a>
+                    <a href="#warranty" class="block py-2 px-4 hover:bg-space-blue hover:text-accent-blue">
+                        <i class="fas fa-shield-alt mr-3"></i>7-Day Warranty
+                    </a>
+                    <a href="#inspection" class="block py-2 px-4 hover:bg-space-blue hover:text-accent-blue">
+                        <i class="fas fa-clipboard-check mr-3"></i>20-Point Inspection
+                    </a>
+                    <a href="#faq" class="block py-2 px-4 hover:bg-space-blue hover:text-accent-blue">
+                        <i class="fas fa-question-circle mr-3"></i>FAQ
+                    </a>
+                    <a href="#contact" class="block py-2 px-4 hover:bg-space-blue hover:text-accent-blue">
+                        <i class="fas fa-phone-alt mr-3"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Product Image and Details -->
+                <div>
+                    <img 
+                        src="mainlaptop.png" 
+                        alt="dell 3189" 
+                        class="w-full rounded-xl shadow-lg"
+                        loading="lazy"
+                    />
+                    <div class="mt-6">
+                        <h2 class="text-3xl font-bold text-gray-900">DELL LATITUDE 3189 X360</h2>
+                        <p class="text-gray-600 mt-2">Student Grade • 1.10GHz • 8GB RAM • 128GB SSD</p>
+                        
+                        <div class="mt-6 flex items-center">
+                            <div class="text-4xl font-bold text-space-blue">₦188,000</div>
+                            <div class="ml-4 text-lg text-gray-500 line-through">₦200,000</div>
+                            <div class="ml-4 bg-red-100 text-red-700 px-3 py-1 rounded-full font-medium">
+                                6% OFF
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <button onclick="scrollToOrderForm()" class="w-full bg-space-blue hover:bg-space-blue-light text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105">
+                                <i class="fas fa-shopping-cart mr-2"></i><a href="https://www.cognitoforms.com/SiriusTechLabs1/orders">BUY NOW</a>
+                            </button>
+                            <p class="text-center text-gray-600 mt-3">
+                                <i class="fas fa-lock mr-1"></i>Secure Order • Payment on Delivery • 7-Day Warranty
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Key Features -->
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-space-blue mb-4">Why Choose Our DELL Laptops?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span><strong>20-Point Quality Inspection</strong> - Every laptop thoroughly tested</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-shield-alt text-blue-500 mt-1 mr-3"></i>
+                                <span><strong>7-Day Technical Warranty</strong> - Repair or replacement guarantee</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-truck text-purple-500 mt-1 mr-3"></i>
+                                <span><strong>Pay on Delivery Nationwide</strong> - No upfront payment required</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-battery-full text-orange-500 mt-1 mr-3"></i>
+                                <span><strong>Battery Health 80%+</strong> - Long-lasting battery performance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Stock Availability -->
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="font-bold text-gray-900">Limited Stock Available</h4>
+                                <p class="text-gray-600 text-sm">Only 8 units left at this price</p>
+                            </div>
+                            <div class="w-24 h-2 bg-gray-300 rounded-full overflow-hidden">
+                                <div class="h-full bg-red-500 w-3/4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Walkthrough Section -->
+        <section id="video" class="bg-gray-50 py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
+                    <i class="fas fa-play-circle mr-2"></i>Watch the Physical Walkthrough
+                </h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-180 rounded-xl overflow-hidden shadow-lg youtubeVideo">
+                        <!-- YouTube Video Placeholder -->
+                         <iframe width="560" height="315" src="https://youtube.com/embed/MhuecvFxBRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center text-gray-600 mt-4">
+                        Watch our detailed video showing every angle and feature of the laptop
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 20-Point Inspection Section -->
+        <section id="inspection" class="py-12">
+            <div class="container mx-auto px-4">                
+                <div class="mt-10 bg-blue-50 p-6 rounded-xl">
+                    <div class="flex items-start">
+                        <i class="fas fa-charging-station text-blue-600 text-2xl mt-1 mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-blue-900 mb-2">Original Charger Included</h3>
+                            <p class="text-blue-800">Every laptop comes with its genuine HP charger. No third-party chargers that could damage your device.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Table -->
+        <section id="specs" class="bg-gray-50 py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+                    Detailed Specifications
+                </h2>
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <!-- Left Column -->
+                        <div class="p-6 border-r border-gray-200">
+                            <h3 class="font-bold text-xl text-space-blue mb-6">Hardware Specifications</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Processor</span>
+                                    <span class="text-gray-700">Intel Celeron 1.10GHz</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">RAM</span>
+                                    <span class="text-gray-700">8GB</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Storage</span>
+                                    <span class="text-gray-700">128GB SSD</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Display</span>
+                                    <span class="text-gray-700">11.6-inch HD (1366 x 768) IPS Touchscreen</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Graphics</span>
+                                    <span class="text-gray-700">Integrated Intel HD Graphics 500</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column -->
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-space-blue mb-6">Features & Connectivity</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Operating System</span>
+                                    <span class="text-gray-700">Windows 10 Pro</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Ports</span>
+                                    <span class="text-gray-700">USB 3.1, HDMI, Ethernet, MicroSD Reader</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Wireless</span>
+                                    <span class="text-gray-700">Wi-Fi 5, Bluetooth 4.2</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Webcam</span>
+                                    <span class="text-gray-700">720p HD with Privacy Shutter</span>
+                                </div>
+                                <div class="flex justify-between py-3 border-b border-gray-100">
+                                    <span class="font-medium">Weight</span>
+                                    <span class="text-gray-700">1.44 kg (3.17 lbs)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+                    Detailed Product Gallery
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <img 
+                            src="view1.jpg" 
+                            alt="view1" 
+                            class="w-100 h-100 object-cover rounded-lg shadow-md"
+                            loading="lazy"
+                        />
+                        <p class="mt-3 font-medium">Front View</p>
+                    </div>
+                    <div class="text-center">
+                        <img 
+                            src="view2.jpg"
+                            class="w-100 h-100 object-cover rounded-lg shadow-md"
+                            loading="lazy"
+                        />
+                        <p class="mt-3 font-medium">Side View</p>
+                    </div>
+                    <div class="text-center">
+                        <img 
+                            src="view3.jpg" 
+                            alt="view3" 
+                            class="w-100 h-100 object-cover rounded-lg shadow-md"
+                            loading="lazy"
+                        />
+                        <p class="mt-3 font-medium">Keyboard View</p>
+                    </div>
+                    <div class="text-center">
+                        <img 
+                            src="view4.jpg" 
+                            alt="view4" 
+                            class="w-100 h-100 object-cover rounded-lg shadow-md"
+                            loading="lazy"
+                        />
+                        <p class="mt-3 font-medium">Tablet Mode View</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7-Day Warranty Section -->
+        <section id="warranty" class="bg-green-50 py-12">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-6">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                        7-Day Technical Warranty
+                    </h2>
+                    <div class="bg-white p-8 rounded-xl shadow-sm mb-8">
+                        <p class="text-xl text-gray-700 mb-6">
+                            <strong>We guarantee</strong> repair or replacement for any hardware issue that occurs within 7 days of delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Customer Feedback -->
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+                    Customer Feedback via WhatsApp
+                </h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
+                        <div class="bg-green-600 p-4 flex items-center">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-3">
+                                <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-bold">Sirius Tech Labs</h3>
+                                <p class="text-green-100 text-sm">Typically replies within 15 minutes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6 whatsapp-chat bg-gray-800">
+                            <!-- Chat Messages -->
+                            <div class="space-y-4">
+                                <!-- Customer Message -->
+                                <div class="flex justify-end">
+                                    <div class="bg-green-700 text-white p-3 rounded-2xl rounded-br-none max-w-xs">
+                                        <p>"Received my HP laptop today. Works perfectly! Battery is solid."</p>
+                                        <p class="text-xs text-green-200 mt-1">David, Lagos • 2:30 PM</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Support Reply -->
+                                <div class="flex justify-start">
+                                    <div class="bg-gray-700 text-white p-3 rounded-2xl rounded-bl-none max-w-xs">
+                                        <p>"Great to hear David! Enjoy your new laptop 😊"</p>
+                                        <p class="text-xs text-gray-300 mt-1">Sirius Tech Labs • 2:31 PM</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Another Customer -->
+                                <div class="flex justify-end">
+                                    <div class="bg-green-700 text-white p-3 rounded-2xl rounded-br-none max-w-xs">
+                                        <p>"The delivery man arrived on time, thank you sir!"</p>
+                                        <p class="text-xs text-green-200 mt-1">Sarah, Abuja • Yesterday</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-800 p-4 border-t border-gray-700">
+                            <div class="flex items-center">
+                                <input type="text" placeholder="Type a message..." class="flex-1 bg-gray-700 text-white px-4 py-2 rounded-full focus:outline-none">
+                                <button class="ml-2 w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-paper-plane text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-center text-gray-600 mt-6">
+                        <i class="fas fa-comment-alt mr-2"></i>Real customer conversations from our WhatsApp support
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form -->
+         <section id="#form" class="form">
+            <iframe src="https://www.cognitoforms.com/f/tec8q7dNNkOKqUToXTOWCw/1" allow="payment" style="border:0;width:100%;" height="1281"></iframe>
+            <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+         </section>
+        <!-- FAQ Section -->
+        <section id="faq" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+                    Frequently Asked Questions
+                </h2>
+                <div class="max-w-3xl mx-auto">
+                    <!-- FAQ Items -->
+                    <div class="space-y-4">
+                        <!-- FAQ 1 -->
+                        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-bold text-lg">How does Pay on Delivery work?</span>
+                                <i class="fas fa-chevron-down transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6">
+                                <p class="text-gray-600 ">We deliver the laptop to your address first. You inspect it, then pay cash or make a bank transfer to our agent. No upfront payment required.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 2 -->
+                        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-bold text-lg">What happens if I have issues within 7 days?</span>
+                                <i class="fas fa-chevron-down transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6">
+                                <p class="text-gray-600">Contact us immediately via WhatsApp. We'll arrange for repair or replacement at no extra cost. Our 7-day warranty covers all hardware issues.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 3 -->
+                        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-bold text-lg">How long does delivery take?</span>
+                                <i class="fas fa-chevron-down transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6">
+                                <p class="text-gray-600">Lagos: 1-2 business days. Other states: 2-5 business days. We use reliable courier services and provide tracking information.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 4 -->
+                        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-bold text-lg">Are these brand new or refurbished laptops?</span>
+                                <i class="fas fa-chevron-down transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-6">
+                                <p class="text-gray-600">These are certified refurbished HP business laptops. They undergo our 20-point inspection and come with 7-day warranty. Performance is like-new.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+                    Contact Us
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Contact Info -->
+                    <div>
+                        <div class="bg-space-blue text-white p-8 rounded-xl">
+                            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <i class="fab fa-whatsapp text-green-400 text-2xl mr-4 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">WhatsApp</h4>
+                                        <p class="text-blue-200">+234 909 008 5555</p>
+                                        <p class="text-sm text-blue-300">Fastest response - typically within 15 minutes</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-red-400 text-2xl mr-4 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Location</h4>
+                                        <p class="text-blue-200">Iwo Road, Ibadan.</p>
+                                        <p class="text-sm text-blue-300">Visit our showroom for physical inspection</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-yellow-400 text-2xl mr-4 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Business Hours</h4>
+                                        <p class="text-blue-200">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </section>
+        <section id="cac" >
+            <!-- cac certs -->
+                    <div class="text-center">
+                        <h3 class="cac">WE ARE REGISTERED!</h3>
+                        <img 
+                            src="cac.jpg" 
+                            alt="cac certificate" 
+                            class="w-120 h-150 object-cover rounded-lg shadow-md cac"
+                            loading="lazy"
+                        />
+                        
+                    </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-space-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-accent-blue rounded-full mr-3"></div>
+                        <h3 class="text-xl font-bold">Sirius Tech Labs</h3>
+                    </div>
+                    <p class="text-blue-200 mb-4">
+                        Certified laptops with thorough inspection and warranty. Serving Nigeria since 2018.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://web.facebook.com/Proof.inc.71/?viewas=&should_open_composer=false&show_switched_toast=false&show_invite_to_follow=false&show_switched_tooltip=false&show_podcast_settings=false&show_community_review_changes=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true" class="w-10 h-10 bg-space-blue-light rounded-full flex items-center justify-center hover:bg-accent-blue hover:text-space-blue transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sirius_tech_labs/" class="w-10 h-10 bg-space-blue-light rounded-full flex items-center justify-center hover:bg-accent-blue hover:text-space-blue transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/message/Q7FFASVLXR3AI1" class="w-10 h-10 bg-space-blue-light rounded-full flex items-center justify-center hover:bg-accent-blue hover:text-space-blue transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#video" class="text-blue-200 hover:text-accent-blue transition">Video Walkthrough</a></li>
+                        <li><a href="#specs" class="text-blue-200 hover:text-accent-blue transition">Specifications</a></li>
+                        <li><a href="#warranty" class="text-blue-200 hover:text-accent-blue transition">7-Day Warranty</a></li>
+                        <li><a href="#inspection" class="text-blue-200 hover:text-accent-blue transition">20-Point Inspection</a></li>
+                        <li><a href="#faq" class="text-blue-200 hover:text-accent-blue transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Payment Methods -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">We Accept</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="bg-white text-gray-800 px-4 py-2 rounded-lg font-medium">Cash on Delivery</div>
+                        <div class="bg-white text-gray-800 px-4 py-2 rounded-lg font-medium">Bank Transfer</div>
+                        <div class="bg-white text-gray-800 px-4 py-2 rounded-lg font-medium">POS</div>
+                    </div>
+                    <div class="mt-8 p-4 bg-space-blue-light rounded-lg">
+                        <p class="text-green-400 font-medium">
+                            <i class="fas fa-shipping-fast mr-2"></i>Nationwide Delivery Available
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p class="text-blue-300">
+                    &copy; 2026 Sirius Tech Labs. All rights reserved. | 
+                    <a href="#" class="hover:text-accent-blue transition">Privacy Policy</a> • 
+                    <a href="#" class="hover:text-accent-blue transition">Terms of Service</a>
+                </p>
+                <p class="text-blue-400 text-sm mt-2">
+                    we are a registered company under the registration number of RC-8755484
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Order Button -->
+    <button id="floatingOrderBtn" class="orderbtn fixed bottom-5 right-5 text-sm bg-green-700 border-gray-200 hover:bg-green-700 text-white w-14 h-25 flex items-center justify-center floating-button z-40 transition-transform hover:scale-110">
+        <a href="https://www.cognitoforms.com/SiriusTechLabs1/orders" class="my-button">BUY NOW!</a>
+    </button>
+
+    <script>
+        // Define data at the beginning
+        const faqData = [
+            {
+                "question": "How does Pay on Delivery work?",
+                "answer": "Free delivery across every state. We deliver the laptop to your address first. You inspect it, then pay cash or make a bank transfer to our agent. No upfront payment required."
+            },
+            {
+                "question": "What happens if I have issues within 7 days?",
+                "answer": "Contact us immediately via WhatsApp. We'll arrange for repair or replacement at no extra cost. Our 7-day warranty covers all hardware issues."
+            },
+            {
+                "question": "How long does delivery take?",
+                "answer": "Lagos: 1-2 business days. Other states: 2-5 business days. We use reliable courier services and provide tracking information."
+            },
+            {
+                "question": "Are these brand new or refurbished laptops?",
+                "answer": "These are certified refurbished HP business laptops. They undergo our 20-point inspection and come with 7-day warranty. Performance is like-new."
+            }
+        ];
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        
+        menuToggle.addEventListener("click", function() {
+            mobileMenu.classList.toggle("hidden");
+            const icon = menuToggle.querySelector("i");
+            if (mobileMenu.classList.contains("hidden")) {
+                icon.className = "fas fa-bars text-xl";
+            } else {
+                icon.className = "fas fa-times text-xl";
+            }
+        });
+
+        // FAQ Toggle Functionality
+        document.querySelectorAll(".faq-toggle").forEach(button => {
+            button.addEventListener("click", () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector("i");
+                
+                // Toggle current FAQ
+                content.classList.toggle("hidden");
+                icon.classList.toggle("rotate-180");
+                
+                // Close other FAQs
+                document.querySelectorAll(".faq-toggle").forEach(otherButton => {
+                    if (otherButton !== button) {
+                        const otherContent = otherButton.nextElementSibling;
+                        const otherIcon = otherButton.querySelector("i");
+                        otherContent.classList.add("hidden");
+                        otherIcon.classList.remove("rotate-180");
+                    }
+                });
+            });
+        });
+
+        // Order Form Submission
+        const orderForm = document.getElementById("orderForm");
+        orderForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(orderForm);
+            const name = formData.get("name") || "Customer";
+            const phone = formData.get("phone") || "";
+            const address = formData.get("address") || "";
+            const payment = formData.get("payment") || "pay_on_delivery";
+            
+            // Create WhatsApp message
+            const message = `New Order from Sirius Tech Labs website%0A%0A` +
+                           `Name: ${name}%0A` +
+                           `Phone: ${phone}%0A` +
+                           `Address: ${address}%0A` +
+                           `Product: DELL LATITUDE%0A` +
+                           `Price: ₦188,000%0A` +
+                           `Payment: ${payment === "pay_on_delivery" ? "Pay on Delivery" : "Bank Transfer"}%0A%0A` +
+                           `Please confirm this order.`;
+            
+            // Redirect to WhatsApp
+            window.open(`https://wa.me/2349090085555?text=${message}`, "_blank");
+            
+            // Show confirmation
+            alert("Order submitted! You'll be redirected to WhatsApp to confirm your order.");
+        });
+
+        // Floating button scroll to order form
+        const floatingOrderBtn = document.getElementById("floatingOrderBtn");
+        floatingOrderBtn.addEventListener("click", scrollToOrderForm);
+        
+        function scrollToOrderForm() {
+            document.getElementById("order").scrollIntoView({ 
+                behavior: "smooth" 
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute("href");
+                if (targetId === "#") return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add("hidden");
+                    menuToggle.querySelector("i").className = "fas fa-bars text-xl";
+                    
+                    // Scroll to target
+                    targetElement.scrollIntoView({ 
+                        behavior: "smooth" 
+                    });
+                }
+            });
+        });
+
+        // Add rotate-180 class to CSS
+        const style = document.createElement("style");
+        style.textContent = ".rotate-180 { transform: rotate(180deg); }";
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
